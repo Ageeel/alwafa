@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fa/css/all.min.css">
+    <title>الآراء</title>
+</head>
+<body>
+    <div class="form-container flex">
+        <form>
+            <div class="form-field flex col">
+                <h3>يمكنك إرفاق صورة شخصية</h3>
+                <div class="file">
+                    <p class="flex">
+                        <i class="fa fa-cloud-upload-alt"></i>
+                        إختار صورة من الهاتف
+                        </p>
+                    <input type="file" name="review_img">
+                </div>
+            </div><!-- file field -->
+            <div class="form-field flex col">
+                <h3>
+                    أكتب رأيك 
+             <span class="remaining-chars">
+                    ( 200 حرف )
+             </span>
+                </h3>     
+                <textarea name="review_text" required maxlength="200"></textarea>
+            </div><!-- /text field -->
+            <div class="form-field">
+             <button type="submit">
+                 إرسال
+             </button>
+            </div><!-- /submit -->
+        </form>            
+    </div><!-- /form-container -->
+    <div class="app-bar flex">     
+    </div><!-- /app-bar -->    
+       <div class="review-tools flex">
+           <div class="review-counter flex col">
+               <p>آراء الزوار</p>
+               <p>48763</p>
+           </div><!-- /review-counter -->
+           <div class="add-review flex col">
+               أضف رأيك
+               <i class="fa fa-plus-circle"></i>
+           </div><!-- /add-review -->
+           <div class="sort flex col">
+              <p>فرز القائمة</p>
+              <select>
+                  <option  value="asc">الأحدث
+                  <option value="des">الأقدم
+              </select>
+           </div><!-- /sort -->
+       </div><!-- /review-tools -->
+       <div class="container flex col">
+       <div class="review-card flex col">
+         <div class="avatar flex">
+             <img src="img/reviewers/2.png" alt="">
+         </div><!-- /avatar -->
+         <p><!-- 200 chars only -->
+                 بسم الله الرحمن الرحيم.
+                بتمنى ليكم التوفيق، وما تستسلموا استمروا والله يوفق..
+                بسم الله الرحمن الرحيم.
+                بتمنى ليكم التوفيق، وما تستسلموا استمروا والله يوفق..
+         </p>
+         <!-- date -->
+         <div class="date">
+             2.يناير.2025
+             الساعة 5:02 ص     
+         </div><!-- /date -->
+       </div><!-- /review-card -->
+       <!-- ------------- -->
+       <div class="review-card flex col">
+         <div class="avatar flex">
+             <img src="img/reviewers/1.jpg" alt="">
+         </div><!-- /avatar -->
+         <p>
+                 بسم الله الرحمن الرحيم.
+                بتمنى ليكم التوفيق، وما تستسلموا استمروا والله يوفق..
+                بسم الله الرحمن الرحيم.
+                بتمنى ليكم التوفيق، وما تستسلموا استمروا والله يوفق..
+         </p>
+         <!-- date -->
+         <div class="date">
+             2.يناير.2025
+             الساعة 5:02 ص     
+         </div><!-- /date -->
+       </div><!-- /review-card -->
+   </div><!-- /container -->
+   <div class="bottom-nav flex">
+      <div class="nav-item">
+          <i class="fa fa-info-circle"></i>
+          <span>حولنا</span>
+      </div>
+         <div class="nav-item">
+             <i class="fa fa-users"></i>
+             <span>الأعضاء</span>
+         </div>    
+       <div class="nav-item">
+           <i class="fa fa-book"></i>
+           <span>النشرة</span>
+       </div>
+       <div class="nav-item active">
+           <i class="fa fa-comments"></i>
+           <span>الآراء</span>
+      </div>
+   </div><!-- /bottom nav -->
+   <!-- script -->
+   <script src="js/jq.js"></script>
+   <script src="js/reviews.js"></script>  
+   <!-- /script -->
+</body>
+</html>
